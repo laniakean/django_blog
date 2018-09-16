@@ -4,6 +4,7 @@ from django.conf import settings
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 
+# Function Base View! 함수기반 VIEW! 의 4가지 패턴 (2-6)
 #1. number sum in path
 def mysum(request, numbers):
     result = sum(map(lambda s: int(s or 0), numbers.split("/")))
